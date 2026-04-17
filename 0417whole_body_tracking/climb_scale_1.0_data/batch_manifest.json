@@ -1,0 +1,2992 @@
+{
+  "version": 1,
+  "database_dir": "output/motion_matching/single_skill_db",
+  "skill_name": "climb_15_z_scale_1.0",
+  "num_trajectories": 10,
+  "seed": 0,
+  "generation_config_path": "data/motion_matching/trajectory_generation_config.json",
+  "pre_skill_config": {
+    "speed_levels_mps": [
+      1.0,
+      2.0
+    ],
+    "heading_degrees": [
+      -45.0,
+      -22.5,
+      0.0,
+      22.5,
+      45.0
+    ],
+    "start_distance_meters": {
+      "min": 4.5,
+      "max": 9.0
+    }
+  },
+  "start_pose_config": {
+    "standing_window_radius_frames": 1,
+    "force_root_height_alignment": true,
+    "root_height_offset_meters": 0.0
+  },
+  "trajectories": [
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -5.238065001057449,
+          9.05782789020858,
+          -0.18835818767547607
+        ],
+        "yaw_deg": -7.299915086637265
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 42,
+        "source_frame": 43,
+        "mirrored": false,
+        "root_translation": [
+          0.40776997804641724,
+          -1.4897133111953735,
+          0.8061926960945129
+        ],
+        "root_yaw_deg": 92.70459958383098
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 43,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 2.0,
+        "heading_deg": 22.5,
+        "pre_skill_distance_meters": 5.714040211937416,
+        "pre_skill_seconds": 2.857020105968708,
+        "pre_skill_frames": 86,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 42,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 14,
+          "source_end_frame": 23,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg08_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg08_slow",
+          "mirrored": true,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 58,
+          "source_end_frame": 67,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 502,
+          "source_end_frame": 511,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 302,
+          "source_end_frame": 311,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 669,
+          "source_end_frame": 674,
+          "output_start_frame": 81,
+          "output_end_frame": 86
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 148,
+          "output_start_frame": 87,
+          "output_end_frame": 193
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg01_slow__mirror",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg01_slow",
+          "mirrored": true,
+          "source_start_frame": 943,
+          "source_end_frame": 952,
+          "output_start_frame": 194,
+          "output_end_frame": 203
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg06_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg06_slow",
+          "mirrored": true,
+          "source_start_frame": 44,
+          "source_end_frame": 53,
+          "output_start_frame": 204,
+          "output_end_frame": 213
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 50,
+          "source_end_frame": 59,
+          "output_start_frame": 214,
+          "output_end_frame": 223
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 59,
+          "source_end_frame": 68,
+          "output_start_frame": 224,
+          "output_end_frame": 233
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 234,
+          "output_end_frame": 243
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 20,
+          "source_end_frame": 29,
+          "output_start_frame": 244,
+          "output_end_frame": 253
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0000",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0000.npz",
+      "num_frames": 254
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -9.042988161722919,
+          5.259944730493328,
+          -0.05535233020782471
+        ],
+        "yaw_deg": -14.986550709708418
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 49,
+        "source_frame": 50,
+        "mirrored": false,
+        "root_translation": [
+          0.4230268597602844,
+          -1.4102057218551636,
+          0.7767122387886047
+        ],
+        "root_yaw_deg": 106.04178042945372
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 50,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": -45.0,
+        "pre_skill_distance_meters": 4.574374359878381,
+        "pre_skill_seconds": 4.574374359878381,
+        "pre_skill_frames": 137,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 49,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg11_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg11_medium",
+          "mirrored": false,
+          "source_start_frame": 1,
+          "source_end_frame": 10,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg11_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg11_medium",
+          "mirrored": false,
+          "source_start_frame": 10,
+          "source_end_frame": 19,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 102,
+          "source_end_frame": 111,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2448,
+          "source_end_frame": 2457,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2457,
+          "source_end_frame": 2466,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2299,
+          "source_end_frame": 2308,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 187,
+          "source_end_frame": 196,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 61,
+          "source_end_frame": 70,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2300,
+          "source_end_frame": 2309,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2426,
+          "source_end_frame": 2435,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2464,
+          "source_end_frame": 2470,
+          "output_start_frame": 131,
+          "output_end_frame": 137
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 49,
+          "source_end_frame": 148,
+          "output_start_frame": 138,
+          "output_end_frame": 237
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 238,
+          "output_end_frame": 247
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 248,
+          "output_end_frame": 257
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 258,
+          "output_end_frame": 267
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 268,
+          "output_end_frame": 277
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 278,
+          "output_end_frame": 287
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 288,
+          "output_end_frame": 297
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0001",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0001.npz",
+      "num_frames": 298
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -9.189029227553196,
+          7.36872231464444,
+          -0.1109432578086853
+        ],
+        "yaw_deg": 65.6759354442884
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 42,
+        "source_frame": 43,
+        "mirrored": false,
+        "root_translation": [
+          0.40776997804641724,
+          -1.4897133111953735,
+          0.8061926960945129
+        ],
+        "root_yaw_deg": 92.70459958383098
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 43,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": 45.0,
+        "pre_skill_distance_meters": 8.607400097749748,
+        "pre_skill_seconds": 8.607400097749748,
+        "pre_skill_frames": 258,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 42,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 102,
+          "source_end_frame": 111,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2448,
+          "source_end_frame": 2457,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2457,
+          "source_end_frame": 2466,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2299,
+          "source_end_frame": 2308,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 187,
+          "source_end_frame": 196,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 61,
+          "source_end_frame": 70,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2300,
+          "source_end_frame": 2309,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2426,
+          "source_end_frame": 2435,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2464,
+          "source_end_frame": 2473,
+          "output_start_frame": 131,
+          "output_end_frame": 140
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 185,
+          "source_end_frame": 194,
+          "output_start_frame": 141,
+          "output_end_frame": 150
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 151,
+          "output_end_frame": 160
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 109,
+          "source_end_frame": 118,
+          "output_start_frame": 161,
+          "output_end_frame": 170
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 826,
+          "source_end_frame": 835,
+          "output_start_frame": 171,
+          "output_end_frame": 180
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 681,
+          "source_end_frame": 690,
+          "output_start_frame": 181,
+          "output_end_frame": 190
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg05_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg05_slow",
+          "mirrored": false,
+          "source_start_frame": 153,
+          "source_end_frame": 162,
+          "output_start_frame": 191,
+          "output_end_frame": 200
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2442,
+          "source_end_frame": 2451,
+          "output_start_frame": 201,
+          "output_end_frame": 210
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2451,
+          "source_end_frame": 2460,
+          "output_start_frame": 211,
+          "output_end_frame": 220
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 221,
+          "output_end_frame": 230
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 231,
+          "output_end_frame": 240
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 241,
+          "output_end_frame": 250
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2464,
+          "source_end_frame": 2471,
+          "output_start_frame": 251,
+          "output_end_frame": 258
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 148,
+          "output_start_frame": 259,
+          "output_end_frame": 365
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 366,
+          "output_end_frame": 375
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 376,
+          "output_end_frame": 385
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 386,
+          "output_end_frame": 395
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 396,
+          "output_end_frame": 405
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 406,
+          "output_end_frame": 415
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 416,
+          "output_end_frame": 425
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0002",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0002.npz",
+      "num_frames": 426
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -6.532105404316248,
+          9.638290874362681,
+          -0.17443019151687622
+        ],
+        "yaw_deg": 32.774856881844826
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 42,
+        "source_frame": 43,
+        "mirrored": false,
+        "root_translation": [
+          0.40776997804641724,
+          -1.4897133111953735,
+          0.8061926960945129
+        ],
+        "root_yaw_deg": 92.70459958383098
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 43,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 2.0,
+        "heading_deg": 22.5,
+        "pre_skill_distance_meters": 7.782734524427992,
+        "pre_skill_seconds": 3.891367262213996,
+        "pre_skill_frames": 117,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 42,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 14,
+          "source_end_frame": 23,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg08_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg08_slow",
+          "mirrored": true,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 58,
+          "source_end_frame": 67,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 502,
+          "source_end_frame": 511,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 302,
+          "source_end_frame": 311,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 669,
+          "source_end_frame": 678,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 679,
+          "source_end_frame": 688,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 689,
+          "source_end_frame": 698,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 198,
+          "source_end_frame": 204,
+          "output_start_frame": 111,
+          "output_end_frame": 117
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 148,
+          "output_start_frame": 118,
+          "output_end_frame": 224
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg01_slow__mirror",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg01_slow",
+          "mirrored": true,
+          "source_start_frame": 943,
+          "source_end_frame": 952,
+          "output_start_frame": 225,
+          "output_end_frame": 234
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg06_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg06_slow",
+          "mirrored": true,
+          "source_start_frame": 44,
+          "source_end_frame": 53,
+          "output_start_frame": 235,
+          "output_end_frame": 244
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 50,
+          "source_end_frame": 59,
+          "output_start_frame": 245,
+          "output_end_frame": 254
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 59,
+          "source_end_frame": 68,
+          "output_start_frame": 255,
+          "output_end_frame": 264
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 265,
+          "output_end_frame": 274
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 20,
+          "source_end_frame": 29,
+          "output_start_frame": 275,
+          "output_end_frame": 284
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0003",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0003.npz",
+      "num_frames": 285
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          2.8406175986830626,
+          6.311252007573385,
+          -0.13913017511367798
+        ],
+        "yaw_deg": -96.60152267996833
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 50,
+        "source_frame": 51,
+        "mirrored": false,
+        "root_translation": [
+          0.4229668080806732,
+          -1.3901379108428955,
+          0.7667643427848816
+        ],
+        "root_yaw_deg": 108.13456818873351
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 51,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 2.0,
+        "heading_deg": 0.0,
+        "pre_skill_distance_meters": 8.707825907044956,
+        "pre_skill_seconds": 4.353912953522478,
+        "pre_skill_frames": 131,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 50,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg10_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg10_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg10_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg10_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg11_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg11_medium",
+          "mirrored": false,
+          "source_start_frame": 15,
+          "source_end_frame": 24,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 25,
+          "source_end_frame": 34,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject4_0_-1_seg11_medium",
+          "source_name": "LAFAN_run2_subject4_0_-1_seg11_medium",
+          "mirrored": false,
+          "source_start_frame": 1413,
+          "source_end_frame": 1422,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg16_medium",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg16_medium",
+          "mirrored": false,
+          "source_start_frame": 86,
+          "source_end_frame": 95,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject4_0_-1_seg06_medium",
+          "source_name": "LAFAN_run2_subject4_0_-1_seg06_medium",
+          "mirrored": false,
+          "source_start_frame": 767,
+          "source_end_frame": 776,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject4_0_-1_seg03_medium",
+          "source_name": "LAFAN_run2_subject4_0_-1_seg03_medium",
+          "mirrored": false,
+          "source_start_frame": 81,
+          "source_end_frame": 90,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 904,
+          "source_end_frame": 913,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2952,
+          "source_end_frame": 2961,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 1375,
+          "source_end_frame": 1384,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 1384,
+          "source_end_frame": 1393,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg01_medium",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg01_medium",
+          "mirrored": false,
+          "source_start_frame": 152,
+          "source_end_frame": 161,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg01_medium",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg01_medium",
+          "mirrored": false,
+          "source_start_frame": 161,
+          "source_end_frame": 161,
+          "output_start_frame": 131,
+          "output_end_frame": 131
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 50,
+          "source_end_frame": 148,
+          "output_start_frame": 132,
+          "output_end_frame": 230
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg01_slow__mirror",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg01_slow",
+          "mirrored": true,
+          "source_start_frame": 943,
+          "source_end_frame": 952,
+          "output_start_frame": 231,
+          "output_end_frame": 240
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg06_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg06_slow",
+          "mirrored": true,
+          "source_start_frame": 44,
+          "source_end_frame": 53,
+          "output_start_frame": 241,
+          "output_end_frame": 250
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 50,
+          "source_end_frame": 59,
+          "output_start_frame": 251,
+          "output_end_frame": 260
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 59,
+          "source_end_frame": 68,
+          "output_start_frame": 261,
+          "output_end_frame": 270
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 271,
+          "output_end_frame": 280
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 20,
+          "source_end_frame": 29,
+          "output_start_frame": 281,
+          "output_end_frame": 290
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0004",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0004.npz",
+      "num_frames": 291
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -8.566971465649075,
+          4.081921525503962,
+          -0.1402496099472046
+        ],
+        "yaw_deg": 178.83244103085727
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 41,
+        "source_frame": 42,
+        "mirrored": false,
+        "root_translation": [
+          0.40351641178131104,
+          -1.497977375984192,
+          0.8112044930458069
+        ],
+        "root_yaw_deg": 92.8119111639026
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 42,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": 45.0,
+        "pre_skill_distance_meters": 4.512323250765666,
+        "pre_skill_seconds": 4.512323250765666,
+        "pre_skill_frames": 135,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 41,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 102,
+          "source_end_frame": 111,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2448,
+          "source_end_frame": 2457,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2457,
+          "source_end_frame": 2466,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2299,
+          "source_end_frame": 2308,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 187,
+          "source_end_frame": 196,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 61,
+          "source_end_frame": 70,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2300,
+          "source_end_frame": 2309,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2426,
+          "source_end_frame": 2435,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2464,
+          "source_end_frame": 2468,
+          "output_start_frame": 131,
+          "output_end_frame": 135
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 41,
+          "source_end_frame": 148,
+          "output_start_frame": 136,
+          "output_end_frame": 243
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 244,
+          "output_end_frame": 253
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 254,
+          "output_end_frame": 263
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 264,
+          "output_end_frame": 273
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 274,
+          "output_end_frame": 283
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 284,
+          "output_end_frame": 293
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 294,
+          "output_end_frame": 303
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0005",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0005.npz",
+      "num_frames": 304
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -8.213467161426383,
+          4.011863487109306,
+          -0.15108340978622437
+        ],
+        "yaw_deg": -168.12806227200565
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 43,
+        "source_frame": 44,
+        "mirrored": false,
+        "root_translation": [
+          0.41136959195137024,
+          -1.4828498363494873,
+          0.8023533225059509
+        ],
+        "root_yaw_deg": 93.07677050836554
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 44,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": 45.0,
+        "pre_skill_distance_meters": 4.6511350888745895,
+        "pre_skill_seconds": 4.6511350888745895,
+        "pre_skill_frames": 140,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 43,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 102,
+          "source_end_frame": 111,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2448,
+          "source_end_frame": 2457,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2457,
+          "source_end_frame": 2466,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2299,
+          "source_end_frame": 2308,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 187,
+          "source_end_frame": 196,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 61,
+          "source_end_frame": 70,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2300,
+          "source_end_frame": 2309,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2426,
+          "source_end_frame": 2435,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2464,
+          "source_end_frame": 2473,
+          "output_start_frame": 131,
+          "output_end_frame": 140
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 43,
+          "source_end_frame": 148,
+          "output_start_frame": 141,
+          "output_end_frame": 246
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 247,
+          "output_end_frame": 256
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 257,
+          "output_end_frame": 266
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 267,
+          "output_end_frame": 276
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 277,
+          "output_end_frame": 286
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 287,
+          "output_end_frame": 296
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 297,
+          "output_end_frame": 306
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0006",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0006.npz",
+      "num_frames": 307
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -5.259253280867386,
+          8.788520113951318,
+          -0.1666271686553955
+        ],
+        "yaw_deg": -8.643019689979203
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 42,
+        "source_frame": 43,
+        "mirrored": false,
+        "root_translation": [
+          0.40776997804641724,
+          -1.4897133111953735,
+          0.8061926960945129
+        ],
+        "root_yaw_deg": 92.70459958383098
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 43,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 2.0,
+        "heading_deg": 22.5,
+        "pre_skill_distance_meters": 5.290450292711515,
+        "pre_skill_seconds": 2.6452251463557577,
+        "pre_skill_frames": 79,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 42,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg14_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 14,
+          "source_end_frame": 23,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg08_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg08_slow",
+          "mirrored": true,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 58,
+          "source_end_frame": 67,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg07_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg07_slow",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 502,
+          "source_end_frame": 511,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg06_slow",
+          "mirrored": false,
+          "source_start_frame": 302,
+          "source_end_frame": 310,
+          "output_start_frame": 71,
+          "output_end_frame": 79
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 148,
+          "output_start_frame": 80,
+          "output_end_frame": 186
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg01_slow__mirror",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg01_slow",
+          "mirrored": true,
+          "source_start_frame": 943,
+          "source_end_frame": 952,
+          "output_start_frame": 187,
+          "output_end_frame": 196
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg06_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg06_slow",
+          "mirrored": true,
+          "source_start_frame": 44,
+          "source_end_frame": 53,
+          "output_start_frame": 197,
+          "output_end_frame": 206
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 50,
+          "source_end_frame": 59,
+          "output_start_frame": 207,
+          "output_end_frame": 216
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 59,
+          "source_end_frame": 68,
+          "output_start_frame": 217,
+          "output_end_frame": 226
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run2_subject1_0_-1_seg17_medium__mirror",
+          "source_name": "LAFAN_run2_subject1_0_-1_seg17_medium",
+          "mirrored": true,
+          "source_start_frame": 68,
+          "source_end_frame": 77,
+          "output_start_frame": 227,
+          "output_end_frame": 236
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 20,
+          "source_end_frame": 29,
+          "output_start_frame": 237,
+          "output_end_frame": 246
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0007",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0007.npz",
+      "num_frames": 247
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -6.733105549923307,
+          6.96582041087737,
+          -0.1350833773612976
+        ],
+        "yaw_deg": -27.35040693979379
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 43,
+        "source_frame": 44,
+        "mirrored": false,
+        "root_translation": [
+          0.41136959195137024,
+          -1.4828498363494873,
+          0.8023533225059509
+        ],
+        "root_yaw_deg": 93.07677050836554
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 44,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": 45.0,
+        "pre_skill_distance_meters": 6.936575491120912,
+        "pre_skill_seconds": 6.936575491120912,
+        "pre_skill_frames": 208,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 43,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 8,
+          "source_end_frame": 17,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 102,
+          "source_end_frame": 111,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2448,
+          "source_end_frame": 2457,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2457,
+          "source_end_frame": 2466,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2299,
+          "source_end_frame": 2308,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 187,
+          "source_end_frame": 196,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 61,
+          "source_end_frame": 70,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 2300,
+          "source_end_frame": 2309,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2426,
+          "source_end_frame": 2435,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2461,
+          "source_end_frame": 2470,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2470,
+          "source_end_frame": 2479,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2455,
+          "source_end_frame": 2464,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2464,
+          "source_end_frame": 2473,
+          "output_start_frame": 131,
+          "output_end_frame": 140
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 185,
+          "source_end_frame": 194,
+          "output_start_frame": 141,
+          "output_end_frame": 150
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 151,
+          "output_end_frame": 160
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 109,
+          "source_end_frame": 118,
+          "output_start_frame": 161,
+          "output_end_frame": 170
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 826,
+          "source_end_frame": 835,
+          "output_start_frame": 171,
+          "output_end_frame": 180
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject5_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 681,
+          "source_end_frame": 690,
+          "output_start_frame": 181,
+          "output_end_frame": 190
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg05_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg05_slow",
+          "mirrored": false,
+          "source_start_frame": 153,
+          "source_end_frame": 162,
+          "output_start_frame": 191,
+          "output_end_frame": 200
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2442,
+          "source_end_frame": 2449,
+          "output_start_frame": 201,
+          "output_end_frame": 208
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 43,
+          "source_end_frame": 148,
+          "output_start_frame": 209,
+          "output_end_frame": 314
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 315,
+          "output_end_frame": 324
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 325,
+          "output_end_frame": 334
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 335,
+          "output_end_frame": 344
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 345,
+          "output_end_frame": 354
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 355,
+          "output_end_frame": 364
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 365,
+          "output_end_frame": 374
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0008",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0008.npz",
+      "num_frames": 375
+    },
+    {
+      "skill_name": "climb_15_z_scale_1.0",
+      "terrain_path": "data/models/terrain/climb_15/multi_boxes_z_scale_1.0.urdf",
+      "terrain_world_pose": {
+        "translation": [
+          -9.26749064614328,
+          2.1574457793003887,
+          -0.1234736442565918
+        ],
+        "yaw_deg": 58.91348707336091
+      },
+      "annotation_source": "heuristic_seed",
+      "needs_review": true,
+      "start_pose": {
+        "mode": "standing_initial",
+        "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+        "source_frame": 0,
+        "selected_root_height": 0.7904563546180725,
+        "target_root_height": 0.7767122387886047,
+        "desired_root_height": 0.7767122387886047,
+        "final_root_height": 0.7767122387886047,
+        "force_root_height_alignment": true,
+        "root_height_offset_meters": 0.0
+      },
+      "skill_world_locked": false,
+      "skill_anchor": {
+        "fixed_world": false,
+        "entry_source_frame": 28,
+        "source_frame": 29,
+        "mirrored": false,
+        "root_translation": [
+          0.3887191116809845,
+          -1.540461778640747,
+          0.8140980005264282
+        ],
+        "root_yaw_deg": 106.39737216800201
+      },
+      "terrain_anchor": {
+        "applied_source_frame": 29,
+        "interpreted_as": "terrain_asset_origin_in_skill_clip_world"
+      },
+      "command": {
+        "speed_mps": 1.0,
+        "heading_deg": -22.5,
+        "pre_skill_distance_meters": 6.4020924953894625,
+        "pre_skill_seconds": 6.4020924953894625,
+        "pre_skill_frames": 192,
+        "post_skill_frames": 60
+      },
+      "approach": {
+        "target_source_frame": 28,
+        "target_clip_name": "climb_15_z_scale_1.0"
+      },
+      "search": {
+        "interval_frames": 10,
+        "command_spring_damping": 6.0,
+        "inertialization_damping": 10.0
+      },
+      "segments": [
+        {
+          "mode": "standing_initial",
+          "clip_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "source_name": "LAFAN_sprint1_subject4_0_-1_seg04_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 0,
+          "output_start_frame": 0,
+          "output_end_frame": 0
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg12_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg12_medium",
+          "mirrored": false,
+          "source_start_frame": 0,
+          "source_end_frame": 9,
+          "output_start_frame": 1,
+          "output_end_frame": 10
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg12_medium",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg12_medium",
+          "mirrored": false,
+          "source_start_frame": 9,
+          "source_end_frame": 18,
+          "output_start_frame": 11,
+          "output_end_frame": 20
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg00_medium",
+          "mirrored": false,
+          "source_start_frame": 2261,
+          "source_end_frame": 2270,
+          "output_start_frame": 21,
+          "output_end_frame": 30
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 149,
+          "source_end_frame": 158,
+          "output_start_frame": 31,
+          "output_end_frame": 40
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 158,
+          "source_end_frame": 167,
+          "output_start_frame": 41,
+          "output_end_frame": 50
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 167,
+          "source_end_frame": 176,
+          "output_start_frame": 51,
+          "output_end_frame": 60
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 14,
+          "source_end_frame": 23,
+          "output_start_frame": 61,
+          "output_end_frame": 70
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg04_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg04_slow",
+          "mirrored": true,
+          "source_start_frame": 77,
+          "source_end_frame": 86,
+          "output_start_frame": 71,
+          "output_end_frame": 80
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_run1_subject2_0_-1_seg06_slow__mirror",
+          "source_name": "LAFAN_run1_subject2_0_-1_seg06_slow",
+          "mirrored": true,
+          "source_start_frame": 118,
+          "source_end_frame": 127,
+          "output_start_frame": 81,
+          "output_end_frame": 90
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 54,
+          "source_end_frame": 63,
+          "output_start_frame": 91,
+          "output_end_frame": 100
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 460,
+          "source_end_frame": 469,
+          "output_start_frame": 101,
+          "output_end_frame": 110
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 435,
+          "source_end_frame": 444,
+          "output_start_frame": 111,
+          "output_end_frame": 120
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 444,
+          "source_end_frame": 453,
+          "output_start_frame": 121,
+          "output_end_frame": 130
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 158,
+          "source_end_frame": 167,
+          "output_start_frame": 131,
+          "output_end_frame": 140
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 463,
+          "source_end_frame": 472,
+          "output_start_frame": 141,
+          "output_end_frame": 150
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 331,
+          "source_end_frame": 340,
+          "output_start_frame": 151,
+          "output_end_frame": 160
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 340,
+          "source_end_frame": 349,
+          "output_start_frame": 161,
+          "output_end_frame": 170
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg02_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg02_slow",
+          "mirrored": false,
+          "source_start_frame": 26,
+          "source_end_frame": 35,
+          "output_start_frame": 171,
+          "output_end_frame": 180
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg02_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg02_slow",
+          "mirrored": false,
+          "source_start_frame": 34,
+          "source_end_frame": 43,
+          "output_start_frame": 181,
+          "output_end_frame": 190
+        },
+        {
+          "mode": "locomotion_approach",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 330,
+          "source_end_frame": 331,
+          "output_start_frame": 191,
+          "output_end_frame": 192
+        },
+        {
+          "mode": "skill_execution",
+          "clip_name": "climb_15_z_scale_1.0",
+          "source_name": "climb_15_z_scale_1.0",
+          "mirrored": false,
+          "source_start_frame": 28,
+          "source_end_frame": 148,
+          "output_start_frame": 193,
+          "output_end_frame": 313
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium__mirror",
+          "source_name": "LAFAN_sprint1_subject2_0_-1_seg07_medium",
+          "mirrored": true,
+          "source_start_frame": 196,
+          "source_end_frame": 205,
+          "output_start_frame": 314,
+          "output_end_frame": 323
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk3_subject2_0_-1_seg00_slow__mirror",
+          "source_name": "LAFAN_walk3_subject2_0_-1_seg00_slow",
+          "mirrored": true,
+          "source_start_frame": 657,
+          "source_end_frame": 666,
+          "output_start_frame": 324,
+          "output_end_frame": 333
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 42,
+          "source_end_frame": 51,
+          "output_start_frame": 334,
+          "output_end_frame": 343
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg01_slow",
+          "mirrored": false,
+          "source_start_frame": 51,
+          "source_end_frame": 60,
+          "output_start_frame": 344,
+          "output_end_frame": 353
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "source_name": "LAFAN_walk2_subject1_0_-1_seg00_slow",
+          "mirrored": false,
+          "source_start_frame": 194,
+          "source_end_frame": 203,
+          "output_start_frame": 354,
+          "output_end_frame": 363
+        },
+        {
+          "mode": "locomotion_recovery",
+          "clip_name": "LAFAN_run1_subject5_0_-1_seg00_medium__mirror",
+          "source_name": "LAFAN_run1_subject5_0_-1_seg00_medium",
+          "mirrored": true,
+          "source_start_frame": 3891,
+          "source_end_frame": 3900,
+          "output_start_frame": 364,
+          "output_end_frame": 373
+        }
+      ],
+      "trajectory_name": "climb_15_z_scale_1.0_0009",
+      "trajectory_path": "output/motion_matching/generated/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0009.npz",
+      "num_frames": 374
+    }
+  ]
+}
