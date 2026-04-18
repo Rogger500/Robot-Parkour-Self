@@ -4,9 +4,6 @@ from isaaclab.utils import configclass
 from isaaclab.sensors import RayCasterCfg, patterns, ContactSensorCfg
 from isaaclab.managers import SceneEntityCfg, ObservationTermCfg, TerminationTermCfg
 from isaaclab.terrains import TerrainImporterCfg
-import os
-from isaaclab.assets import AssetBaseCfg
-from isaaclab.sim.spawners.from_files import UsdFileCfg  # 🌟 改用原生的 USD 加载器
 
 # 使用项目里的真实 mdp 函数
 import whole_body_tracking.tasks.tracking.mdp as mdp
@@ -84,8 +81,7 @@ class G1TeacherEnvCfg(TrackingEnvCfg):
         # ==============================================================
         # 2. Motion file: 固定用 short_jump.npz
         # ==============================================================
-        # self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/short_jump.npz"
-        self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0000.npz"
+        self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/short_jump.npz"
         self.commands.motion.debug_vis = False
 
         # 对 jump reference，先沿用你原来的 torso_link 作为 anchor
@@ -108,26 +104,13 @@ class G1TeacherEnvCfg(TrackingEnvCfg):
         ]
 
         # ==============================================================
-        # 2. 地形与天眼配置
+        # 3. Terrain / height scan
         # ==============================================================
+        # 先固定为平地，专心验证 short_jump 的 tracking。
         self.scene.terrain = TerrainImporterCfg(
-            prim_path="/World/ground", 
-            # terrain_type="usd",
-            terrain_type="plane", # 🌟 保持原生平地
-            # usd_path="/home/ai/whole_body_tracking/artifacts/custom_jump.usd", 
+            prim_path="/World/ground",
+            terrain_type="plane",
             collision_group=-1,
-        )
-        
-        # 🌟 终极方案：直接加载原生 USD 箱子
-        self.scene.obstacles = AssetBaseCfg(
-            prim_path="{ENV_REGEX_NS}/obstacles",
-            spawn=UsdFileCfg(
-                # 👇 直接指向现成的 USD 文件
-                usd_path="/home/ai/whole_body_tracking/artifacts/climb_15/multi_boxes_z_scale_1.0/multi_boxes_z_scale_1.0.usd",
-            ),
-            init_state=AssetBaseCfg.InitialStateCfg(
-                pos=(0.0, 0.0, 0.0),
-            )
         )
 
         self.scene.height_scanner = RayCasterCfg(

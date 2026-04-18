@@ -6,7 +6,8 @@ from isaaclab.managers import SceneEntityCfg, ObservationTermCfg, TerminationTer
 from isaaclab.terrains import TerrainImporterCfg
 import os
 from isaaclab.assets import AssetBaseCfg
-from isaaclab.sim.spawners.from_files import UsdFileCfg  # 🌟 改用原生的 USD 加载器
+from isaaclab.sim.spawners.from_files import UrdfFileCfg
+from isaaclab.sim.converters.urdf_converter_cfg import UrdfConverterCfg
 
 # 使用项目里的真实 mdp 函数
 import whole_body_tracking.tasks.tracking.mdp as mdp
@@ -84,8 +85,7 @@ class G1TeacherEnvCfg(TrackingEnvCfg):
         # ==============================================================
         # 2. Motion file: 固定用 short_jump.npz
         # ==============================================================
-        # self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/short_jump.npz"
-        self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/climb_15_z_scale_1.0/climb_15_z_scale_1.0_0000.npz"
+        self.commands.motion.motion_file = "/home/ai/whole_body_tracking/artifacts/short_jump.npz"
         self.commands.motion.debug_vis = False
 
         # 对 jump reference，先沿用你原来的 torso_link 作为 anchor
@@ -117,19 +117,30 @@ class G1TeacherEnvCfg(TrackingEnvCfg):
             # usd_path="/home/ai/whole_body_tracking/artifacts/custom_jump.usd", 
             collision_group=-1,
         )
+
+        # 🌟 获取当前运行终端的绝对路径，并拼接到 climb_15 上
+        urdf_path = os.path.abspath(os.path.join(os.getcwd(), "0417whole_body_tracking/climb_15/multi_boxes_z_scale_1.0.urdf"))
+        # 或者如果你当前终端的工作目录就是 0417whole_body_tracking，那用下面这行：
+        # urdf_path = os.path.abspath(os.path.join(os.getcwd(), "climb_15/multi_boxes_z_scale_1.0.urdf"))
         
-        # 🌟 终极方案：直接加载原生 USD 箱子
+        # 🌟 终极绝对路径 URDF 箱子配置
         self.scene.obstacles = AssetBaseCfg(
             prim_path="{ENV_REGEX_NS}/obstacles",
-            spawn=UsdFileCfg(
-                # 👇 直接指向现成的 USD 文件
-                usd_path="/home/ai/whole_body_tracking/artifacts/climb_15/multi_boxes_z_scale_1.0/multi_boxes_z_scale_1.0.usd",
+            spawn=UrdfFileCfg(
+                # 👇 完美匹配你提供的真实绝对路径！
+                asset_path="/home/ai/whole_body_tracking/artifacts/climb_15/multi_boxes_z_scale_1.0.urdf",
+                fix_base=True,
+                joint_drive=UrdfConverterCfg.JointDriveCfg(
+                    drive_type="force", 
+                    target_type="position", 
+                    gains=UrdfConverterCfg.JointDriveCfg.PDGainsCfg(stiffness=0, damping=0)
+                ),
             ),
             init_state=AssetBaseCfg.InitialStateCfg(
                 pos=(0.0, 0.0, 0.0),
             )
         )
-
+        
         self.scene.height_scanner = RayCasterCfg(
             prim_path="{ENV_REGEX_NS}/Robot/torso_link",
             offset=RayCasterCfg.OffsetCfg(pos=(0.0, 0.0, 20.0)),
